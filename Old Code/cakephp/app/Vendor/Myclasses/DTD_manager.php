@@ -6,6 +6,8 @@
  * Date: 07-04-16
  * Time: 12:22 PM
  */
+
+// Day - Time(Period) - Duration
 class DTD_manager
 {
     public function get_dt_array_duration_1()
@@ -69,6 +71,7 @@ class DTD_manager
         return $data;
     }
 
+	//Generate array of possible periods
     public function generate_main_array_duration($duration)
     {
         $duration--;
@@ -77,6 +80,7 @@ class DTD_manager
         $period1=array('03','04','05','06');
         $period2=array('08','09','10');
 
+		//remove last period according to duration
         for($x=$duration;$x>0;$x--)
         {
             array_pop($period1);
