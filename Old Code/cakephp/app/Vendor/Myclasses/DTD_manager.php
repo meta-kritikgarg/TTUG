@@ -36,6 +36,7 @@ class DTD_manager
         $period2=array('08','09','10');
         switch($day)
         {
+	    //For saturday -- Before lunch only
             case 6:
             {
                 foreach($period1 as $per)
@@ -46,6 +47,7 @@ class DTD_manager
 
             }
                 break;
+	    //Days else sat
             default:
             {
                 foreach($period1 as $per)
