@@ -133,6 +133,7 @@ class DTD_manager
     }
 
 
+    //Get busy periods(dt) from dtd value
     public function get_dt_from_dtd($datas)
     {
         $result= array();
@@ -140,6 +141,7 @@ class DTD_manager
         {
             $x=intval($data);
            // var_export($data);
+	   //Split string into array
             $end=str_split($x,3);
             //var_export($end);
             switch($end[1])
@@ -159,11 +161,11 @@ class DTD_manager
             }
         }
       //  var_export($result);
-
-
         return $result;
     }
 
+	
+    //Get unique days array from dtd array 
     public function get_d_from_dtd($data)
     {
         $result=array();
@@ -173,17 +175,15 @@ class DTD_manager
 
         }
         //var_export($result);
-
         return array_unique($result);
-
     }
 
+    //Make dtd from dt and duration
     public function get_dtd_from_dt($dt,$duration)
     {
         //var_export( $dt);
         $result= $dt.$duration;
        // var_export($result);
-
         return $result;
     }
 
