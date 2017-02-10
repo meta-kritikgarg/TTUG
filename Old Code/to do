@@ -1,0 +1,35 @@
+For Front Design
+-Make Final output table to represent time table
+-show teacher, room, student wise time table
+-For labs, classes
+
+For Backend
+#In Generate
+-classes are assigned but students group have no room are remaining
+-Test for classes are done
+-labs are remaining
+    -rooms are assigned to labs
+    {
+        -labs and batches are generated
+        -rooms are assigned to them(Only for pref purpose)
+        -assign automatically working properly
+        -
+    }
+
+    Working Logs-
+    11-May-2016:
+    -Teacher Preference for Labs -- Done
+    12-May-2016:
+    -Find teacher_id - Done(Assignment of teachers for lab) -- Done
+    -Find room_id- Done(Assignment of rooms for labs) -- Done
+
+    18-May-2016
+    -Algorithm -- done
+
+    Under development---
+    Generates--- Assignment for labs{
+    select unassigned lab - Done
+    find teacher_id -- Done
+    find room_id -- Done
+    Generate DTD -- Working...
+    }
