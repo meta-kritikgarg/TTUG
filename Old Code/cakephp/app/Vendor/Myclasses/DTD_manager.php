@@ -29,6 +29,7 @@ class DTD_manager
 
     }
 
+    //Get dt array from Day
     public function get_dt_array_by_day($day)
     {
         $data=array();
